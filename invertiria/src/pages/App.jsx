@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
 // Componentes
-import { CTASection } from "./components/CTASection";
+import { CTASection } from "../components/CTASection";
 
 // Pagina principal
 function App() {
@@ -13,6 +13,7 @@ function App() {
       title={t("invertiria.title")}
       paragraph={t("invertiria.paragraph")}
       buttonText={t("invertiria.getStarted")}
+      buttonLink="/investment"
       buttonText2={t("invertiria.learnMore")}
     />
   )

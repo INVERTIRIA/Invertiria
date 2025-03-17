@@ -10,10 +10,15 @@ function Header() {
     const { i18n } = useTranslation();
 
     return (
-        <div className="bg-orange-500 flex justify-end p-2">
-            <Link className={buttonVariants({ variant: "ghost_secondary" })} onClick={() => changeLanguage(i18n, 'es')}>Español</Link>
-            <Link className={buttonVariants({ variant: "ghost_secondary" })} onClick={() => changeLanguage(i18n, 'en')}>English</Link>
-        </div>
+        <header className="bg-orange-500">
+            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+                <Link to="/" className=""><img src="src\assets\react.svg" className="h-8 w-auto" /></Link>
+                <div>
+                    <Link className={buttonVariants({ variant: "full_ghost" })} onClick={() => changeLanguage(i18n, 'es')}>Español</Link>
+                    <Link className={buttonVariants({ variant: "full_ghost" })} onClick={() => changeLanguage(i18n, 'en')}>English</Link>
+                </div>
+            </nav>
+        </header>
     )
 }
 

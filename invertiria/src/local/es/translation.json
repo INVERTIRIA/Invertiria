@@ -4,5 +4,9 @@
         "paragraph": "Invertiria es una pagina web de inversiones inmobiliarias",
         "getStarted": "Empezar gratis",
         "learnMore": "Saber más"
+    },
+    "investment": {
+        "title": "Inversion",
+        "paragraph": "Formulario de inversion"
     }
 }

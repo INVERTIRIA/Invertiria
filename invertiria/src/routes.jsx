@@ -1,7 +1,10 @@
 import { Routes, Route } from "react-router";
-import { App } from './App.jsx'
 import { useTranslation } from 'react-i18next';
 import { useEffect } from 'react';
+
+// Paginas
+import { App } from './pages/App';
+import { Investment } from './pages/Investment';
 
 // Rutas de la aplicacion
 function AppRoutes() {
@@ -17,6 +20,7 @@ function AppRoutes() {
     return (
         <Routes>
             <Route path="/" element={<App />} />
+            <Route path="/investment" element={<Investment />} />
         </Routes>
     )
 }

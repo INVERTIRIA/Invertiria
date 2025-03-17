@@ -4,5 +4,9 @@
         "paragraph": "Invertiria is a real estate investment website",
         "getStarted": "Get Started",
         "learnMore": "Learn more"
+    },
+    "investment": {
+        "title": "Investment",
+        "paragraph": "Investment form"
     }
 }
