@@ -2,17 +2,24 @@ import { useTranslation } from 'react-i18next';
 
 // Componentes
 import { InvestForm } from "../components/InvestForm";
+import { InvestResult } from '../components/InvestResults';
 
-// Pagina principal
+// Pagina de inversion
 function Investment() {
 
   const { t } = useTranslation();
-  
+
   return (
-    <InvestForm
-      title={t("investment.title")}
-      paragraph={t("investment.paragraph")}
-    />
+    <>
+      <InvestForm
+        title={t("investment.title")}
+        paragraph={t("investment.paragraph")}
+      />
+      <InvestResult 
+        title={"Resultados"}
+        paragraph={"Aqui estan los resultados de tu inversion"}
+      />
+    </>
   )
 }
 
