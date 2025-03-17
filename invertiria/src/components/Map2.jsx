@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
-
+ 
 // Componente para manejar el clic y mostrar el pin
 function LocationMarker() {
     const [position, setPosition] = useState(null); // Estado para almacenar la posición del pin
