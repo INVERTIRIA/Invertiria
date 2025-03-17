@@ -10,7 +10,7 @@ function Header() {
     const { i18n } = useTranslation();
 
     return (
-        <div className="bg-cyan-900 flex justify-end">
+        <div className="bg-orange-500 flex justify-end p-2">
             <Link className={buttonVariants({ variant: "ghost_secondary" })} onClick={() => changeLanguage(i18n, 'es')}>Español</Link>
             <Link className={buttonVariants({ variant: "ghost_secondary" })} onClick={() => changeLanguage(i18n, 'en')}>English</Link>
         </div>
