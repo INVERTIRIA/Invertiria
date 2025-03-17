@@ -10,6 +10,7 @@ function LocationMarker() {
         click(e) {
             // Captura las coordenadas del clic y actualiza el estado
             setPosition(e.latlng);
+            console.log(e.latlng);
         },
     });
 
@@ -26,6 +27,8 @@ function Map() {
     // Coordenadas iniciales (Colombia)
     const initialPosition = [4.94, -73.97];
 
+    const [position, setPosition] = useState([4.94, -73.97]);
+    
     return (
         <>
             <MapContainer center={initialPosition} zoom={6} style={{ height: '50vh', width: '100%' }}>
@@ -36,7 +39,7 @@ function Map() {
                 <LocationMarker />
             </MapContainer>
             <br></br>
-            <p>Tu coordenadas son </p>
+            <p>Tu coordenadas son: </p>
         </>
     );
 }

@@ -1,4 +1,4 @@
-import { Map } from "./Map";
+import { Map } from "./Map2";
 
 // Invest form
 function InvestForm({title, paragraph}) {
@@ -8,6 +8,7 @@ function InvestForm({title, paragraph}) {
                 <div className="mx-auto max-w-2xl text-center">
                     <h2 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">{title}</h2>
                     <p className="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-cyan-50">{paragraph}</p>
+                    <br></br>
                     <Map />
                 </div>
             </div>
