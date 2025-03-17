@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Link } from "react-router";
 import { useTranslation } from 'react-i18next';
 
@@ -9,11 +8,6 @@ import { buttonVariants } from "@/components/ui/button"
 function Header() {
 
     const { i18n } = useTranslation();
-
-    // Obtener idioma
-    useEffect(() => {
-        changeLanguage(i18n, localStorage.getItem('language') || 'es');
-    }, [])
 
     return (
         <div className="bg-cyan-900 flex justify-end">
