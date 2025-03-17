@@ -47,7 +47,6 @@ function getResults(cashFlows, setResults) {
 
   // Calcular la TIR
   const tir = irr(cashFlows);
-
   setResults([`${(tir * 100).toFixed(2)}%`])
 }
 
