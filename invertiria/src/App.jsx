@@ -16,10 +16,10 @@ function App() {
 
   return (
     <CTASection
-      title={t("invertiria")}
-      paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
-      buttonText="Get started"
-      buttonText2="Learn more"
+      title={t("invertiria.title")}
+      paragraph={t("invertiria.paragraph")}
+      buttonText={t("invertiria.getStarted")}
+      buttonText2={t("invertiria.learnMore")}
     />
   )
 }

@@ -1,3 +1,8 @@
 {
-    "invertiria": "Invertiria EN"
+    "invertiria": {
+        "title": "Invertiria",
+        "paragraph": "Invertiria is a real estate investment website",
+        "getStarted": "Get Started",
+        "learnMore": "Learn more"
+    }
 }
