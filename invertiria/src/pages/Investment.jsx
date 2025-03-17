@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
 // Componentes
-import { InvestForm } from "../components/CTASection";
+import { InvestForm } from "../components/InvestForm";
 
 // Pagina principal
 function Investment() {

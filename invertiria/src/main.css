@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @plugin "tailwindcss-animate";
 @custom-variant dark (&:is(.dark *));
+@import 'leaflet/dist/leaflet.css';
 
 :root {
   --radius: 0.625rem;
