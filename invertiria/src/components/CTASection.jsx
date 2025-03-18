@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 // CTA Section
 function CTASection({title, paragraph, buttonText, buttonText2, buttonLink, buttonLink2}) {
     return (
-        <div className="bg-orange-500 pb-120">
+        <div className="bg-black pb-120">
             <div className="px-6 py-24 sm:px-6 sm:py-32 lg:px-8">
                 <div className="mx-auto max-w-2xl text-center">
                     <h2 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">{title}</h2>

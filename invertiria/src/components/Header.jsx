@@ -10,7 +10,7 @@ function Header() {
     const { i18n } = useTranslation();
 
     return (
-        <header className="bg-orange-500">
+        <header className="bg-black">
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
                 <Link to="/" className=""><img src="src\assets\react.svg" className="h-8 w-auto" /></Link>
                 <div>
