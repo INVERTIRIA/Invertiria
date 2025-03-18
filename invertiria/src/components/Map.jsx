@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
 
@@ -8,10 +8,16 @@ function Map() {
     const { t } = useTranslation();
 
     // Coordenadas iniciales (Colombia)
-    const initialPosition = [4, -73];
+    const initialPosition = [4.6415843, -74.0857995];
 
     const [position, setPosition] = useState(null);
     const [location, setLocation] = useState(null);
+    
+    // Obtener la ubicación actual
+    useEffect(() => {
+        // setPosition(initialPosition);
+        // getLocation(initialPosition[0], initialPosition[1], setLocation);
+    }, [])
 
     // Función para actualizar las coordenadas
     const changePosition = (position) => {
@@ -38,7 +44,7 @@ function Map() {
                 )}
             </MapContainer>
 
-            {/* Mostrar coordenadas */}
+            {/* Mostrar ubicacion */}
             {location ? (
                 <>
                     <p className="mx-auto mt-3 max-w-xl text-l/8 text-pretty text-cyan-50">{location}</p>
@@ -66,7 +72,7 @@ function LocationMarker({ onPositionChange }) {
 
 // Obtener la ubicación
 async function getLocation(lat, lng, setLocation) {
-    const url = `https://nominatim.openstreetmap.org/reverse?format=geocodejson&lat=${lat}&lon=${lng}&zoom=10&addressdetails=1`;
+    const url = `https://nominatim.openstreetmap.org/reverse?format=geocodejson&lat=${lat}&lon=${lng}&zoom=18&addressdetails=1`;
     fetch(url, { headers: { 'User-Agent': 'testApp/0.1 (kevin@banderaonline.org)' } })
         .then(response => response.json())
         .then(data => {
