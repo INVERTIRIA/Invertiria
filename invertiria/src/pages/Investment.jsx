@@ -15,6 +15,8 @@ function Investment() {
 
   // Flujo de caja
   const cashFlows = [-1000, 300, 400, 500, 200, 300, 600, 500, 400, 300, 200, 100];
+  // const cashFlows = [-5000000, 5000000, 2076500, 2076500, 7076500, 12076500, 18576500, 7439166];
+  // const cashFlows = [5000000, 2076500, 2076500, 7076500, 12076500];
 
   useEffect(() => {
     getResults(cashFlows, setTir);
@@ -31,8 +33,8 @@ function Investment() {
         paragraph={t("investment.here_are_the_results")}
         results={
           <>
-            <p className="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-cyan-50">Cash Flows: {cashFlows.toString()}</p>
-            <p className="mx-auto mt-2 max-w-xl text-lg/8 text-pretty text-cyan-50">TIR: {tir.map(e => e + "%").toString()}</p>
+            <p className="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-cyan-50"><b>Cash Flows:</b> {cashFlows.join(", ")}</p>
+            <p className="mx-auto mt-2 max-w-xl text-lg/8 text-pretty text-cyan-50"><b>TIR:</b> {tir.map(e => e + "%").join(", ")}</p>
           </>
         }
       />
