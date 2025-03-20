@@ -37,7 +37,7 @@ function Investment() {
         }
       />
       <MyLineChart results={cashFlows} dataName="CashFlows" />
-      <MyLineChart results={tir} dataName="TIR (%)"/>
+      <MyLineChart results={tir} dataName="TIR (%)" />
     </div>
   )
 }
@@ -55,7 +55,7 @@ function getResults(cashFlows, setTir) {
       results.push(0);
       continue;
     }
-    results.push(Number((tir*100).toFixed(2)));
+    results.push(Number((tir * 100).toFixed(2)));
   }
   setTir(results)
 }
